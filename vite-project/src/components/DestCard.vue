@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
         <h2>{{ Destination.name }}</h2>
         <img :src="Destination.img" alt=""/>
@@ -27,4 +27,19 @@ img{
     height:300px;
 
 }
+</style> -->
+
+<template>
+    <div>
+<h2></h2>
+
+    </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style scoped>
+
 </style>

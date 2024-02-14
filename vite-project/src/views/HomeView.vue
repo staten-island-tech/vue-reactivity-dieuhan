@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <DestCard v-for="destination in destinations" 
     :key="destination.name"
@@ -50,4 +50,24 @@ const destinations = [
 
 </script>
 
-<style scoped></style>
+<style scoped></style> -->
+
+<template>
+  <div>
+<h2>hi</h2>
+  </div>
+</template>
+
+<script setup>
+const food = [
+{
+  name: "oidhf"
+}
+
+]
+
+</script>
+
+<style scoped>
+
+</style>

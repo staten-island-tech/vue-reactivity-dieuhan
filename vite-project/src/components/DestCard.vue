@@ -23,6 +23,7 @@ function increment(){
     clicked.value++;
 }
 
+
 </script>
 
 <style scoped>

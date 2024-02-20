@@ -12,6 +12,7 @@
 
 <script setup>
 import DestCard from '@/components/DestCard.vue';
+
 const vinyls = [
         {
           title: "uncounted 0.00",
@@ -24,6 +25,12 @@ const vinyls = [
           artist: "Clairo",
           price: "$25.00",
           img: "https://m.media-amazon.com/images/I/81yJk22VcSL._UF1000,1000_QL80_.jpg",
+        },
+        {
+          title: "When We Were Friends",
+          artist: "The Backseat Lovers",
+          price: "29.87",
+          img: "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
         },
         {
           title: "emails i can't send",
@@ -92,18 +99,13 @@ const vinyls = [
           img: "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84"
         },
         {
-          title: "When We Were Friends",
-          artist: "The Backseat Lovers",
-          price: "29.87",
-          img: "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
-        },
-        {
           title: "Superache",
           artist: "Conan Gray",
           price: "$39.98",
           img: "https://m.media-amazon.com/images/I/91Z3q2ceS-L._UF1000,1000_QL80_.jpg"
         },
       ]
+
 
 </script>
 

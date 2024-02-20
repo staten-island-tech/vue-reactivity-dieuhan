@@ -1,16 +1,20 @@
-<!-- <template>
-    <div>
-        <h2>{{ Destination.name }}</h2>
-        <img :src="Destination.img" alt=""/>
-        <h3>{{ clicked }}</h3>
-        <button @click="increment">Click Me</button>
-    </div>
+<template>
+        <div class="card" >
+            <h2>{{ Vinyl.title }}</h2>
+        <h3>{{Vinyl.artist}}</h3>
+        <h4>{{Vinyl.price}}</h4>
+        <img :src="Vinyl.img" alt=""/>
+        <h5>{{ clicked }}</h5>
+        <button @click="increment">Add to Cart</button>
+        </div>
+        
+   
 </template>
 
 <script setup>
-import{ ref } from "vue";
+import{ defineProps, ref } from "vue";
 const props = defineProps({
-    Destination: Object, 
+    Vinyl: Object, 
 });
 
 //clicker logic
@@ -22,24 +26,19 @@ function increment(){
 </script>
 
 <style scoped>
+
 img{
-    width:300px;
-    height:300px;
-
+    width: 300px;
+    height: 300px;
 }
-</style> -->
 
-<template>
-    <div>
-<h2></h2>
-
-    </div>
-</template>
-
-<script setup>
-
-</script>
-
-<style scoped>
+.card{
+    height: 50vh;
+  margin: 2rem 0;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 </style>

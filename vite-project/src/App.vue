@@ -16,7 +16,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header> -->
-
+  <nav>
+    <RouterLink to="/">Shop</RouterLink>
+    <RouterLink to="/about">Cart</RouterLink>
+  </nav>
   <RouterView />
 </template>
 

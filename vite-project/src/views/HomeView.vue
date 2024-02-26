@@ -2,16 +2,22 @@
   <div>
 <h1 class="header">uhans vinyl shop :D </h1>
 
+
     <div class="gallery">
     <DestCard v-for="vinyl in vinyls" 
     :key="vinyl.title"
-    :Vinyl="vinyl"/>
+    :Vinyl="vinyl"
+    @addToCart="addToCart"/>
   </div>
+ 
 </div>
 </template>
 
 <script setup>
 import DestCard from '@/components/DestCard.vue';
+import { ref } from 'vue';
+
+
 
 const vinyls = [
         {
@@ -106,6 +112,12 @@ const vinyls = [
         },
       ]
 
+const cart = ref([]);
+
+function addToCart(vinyl) {
+  cart.value.push(vinyl);
+  console.log('Added to Cart:', vinyl)
+}
 
 </script>
 

@@ -4,25 +4,32 @@
         <h3>{{Vinyl.artist}}</h3>
         <h4>{{Vinyl.price}}</h4>
         <img :src="Vinyl.img" alt=""/>
-        <h5>{{ clicked }}</h5>
-        <button @click="increment">Add to Cart</button>
+        
+        <button class="bb" @click="addToCart">Add to Cart</button>
         </div>
         
    
 </template>
 
 <script setup>
-import{ defineProps, ref } from "vue";
+import{ defineProps, defineEmits } from "vue";
+
+
 const props = defineProps({
     Vinyl: Object, 
 });
 
 //clicker logic
-const clicked = ref(0);
+/* const clicked = ref(0);
 function increment(){
     clicked.value++;
-}
+} */
 
+const emits = defineEmits(['addToCart']);
+
+function addToCart() {
+  emits('addToCart', props.Vinyl);
+}
 
 </script>
 
@@ -41,5 +48,11 @@ img{
   flex-direction: column;
   align-items: center;
 }
+
+.bb{
+    margin-top: 20px;
+}
+
+
 
 </style>

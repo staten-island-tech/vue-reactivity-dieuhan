@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
 <h1 class="header">uhans vinyl shop :D </h1>
 
 
@@ -72,7 +72,7 @@ const vinyls = [
           title: "Wiped Out!",
           artist: "The Neighbourhood",
           price: "$46.16",
-          img: "https://i.ebayimg.com/images/g/6NsAAOSwAiRih285/s-l1200.webp"
+          img: "https://upload.wikimedia.org/wikipedia/en/1/15/The_Neighbourhood_-_Wiped_Out.jpg"
         },
         {
           title: "minor",
@@ -133,6 +133,12 @@ function addToCart(vinyl) {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80vw;
+  margin-left: -9rem;
+  margin-right: -6.5rem;
+  background-color: rgb(174, 219, 186);
+}
+.body{
+  background-color: rgb(174, 219, 186);
 }
 
 </style>

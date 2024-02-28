@@ -116,6 +116,7 @@ const cart = ref([]);
 
 function addToCart(vinyl) {
   cart.value.push(vinyl);
+ 
   console.log('Added to Cart:', vinyl)
 }
 
@@ -137,9 +138,7 @@ function addToCart(vinyl) {
   margin-right: -6.5rem;
   background-color: rgb(174, 219, 186);
 }
-.body{
-  background-color: rgb(174, 219, 186);
-}
+
 
 </style>
 

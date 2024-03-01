@@ -4,10 +4,13 @@
 
 
     <div class="gallery">
+      <div id="left">
     <DestCard v-for="vinyl in vinyls" 
     :key="vinyl.title"
     :Vinyl="vinyl"
     @addToCart="addToCart"/>
+    </div>
+    <div id="right"></div>
   </div>
  
 </div>
@@ -35,7 +38,7 @@ const vinyls = [
         {
           title: "When We Were Friends",
           artist: "The Backseat Lovers",
-          price: "29.87",
+          price: "$29.87",
           img: "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
         },
         {
@@ -47,7 +50,7 @@ const vinyls = [
         {
           title: "Nothing Happens",
           artist: "Wallows",
-          price: "22.99",
+          price: "$22.99",
           img: "https://m.media-amazon.com/images/I/818UcoZySEL._UF1000,1000_QL80_.jpg",
         },
         {
@@ -131,15 +134,22 @@ function addToCart(vinyl) {
 .gallery{
   margin: 1rem auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80vw;
-  margin-left: -9rem;
-  margin-right: -6.5rem;
+  width: 100%;
+  height: 90vh;
   background-color: rgb(174, 219, 186);
 }
 
+#left{
+  display: flex;
+  max-width: 20%;
+  height: 100%;
+}
 
+#right{
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
 </style>
 
 

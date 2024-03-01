@@ -36,14 +36,15 @@ function addToCart() {
 <style scoped>
 
 img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .card{
-    height: 50vh;
-  margin: 2rem 0;
+  border: 1PX solid black;
+  margin: 5%;
   width: 28%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;

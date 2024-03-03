@@ -50,7 +50,7 @@ const vinyls = [
         {
           title: "When We Were Friends",
           artist: "The Backseat Lovers",
-          price: "29.87",
+          price: "$29.87",
           img: "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
         },
         {
@@ -62,7 +62,7 @@ const vinyls = [
         {
           title: "Nothing Happens",
           artist: "Wallows",
-          price: "22.99",
+          price: "$22.99",
           img: "https://m.media-amazon.com/images/I/818UcoZySEL._UF1000,1000_QL80_.jpg",
         },
         {

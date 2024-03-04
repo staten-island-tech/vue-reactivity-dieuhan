@@ -169,58 +169,14 @@ function addToCart(vinyl) {
 .gallery{
   
   display: flex;
-<<<<<<< HEAD
   width: 100%;
   height: 90vh;
-=======
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 80vw;
->>>>>>> 6cf7599903c11b63414c259310d25003f1e6de3c
   background-color: rgb(174, 219, 186);
  margin-left: 90px;
   
 }
 
-<<<<<<< HEAD
-#left{
-  display: flex;
-  max-width: 20%;
-  height: 100%;
-=======
-.cart {
-  width: 300px; 
-  flex-direction: column;
-  margin-left: 60px;
 
-  
-}
-
-.cart-item {
-  justify-content: space-between;
-}
-
-.total {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-}
-
-.side {
-  display: flex;
-  align-items: flex-start; 
->>>>>>> 6cf7599903c11b63414c259310d25003f1e6de3c
-}
-
-#right{
-  display: flex;
-  width: 50%;
-  height: 100%;
-}
 </style>
 
 

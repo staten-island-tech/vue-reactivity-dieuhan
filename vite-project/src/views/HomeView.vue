@@ -176,6 +176,32 @@ function addToCart(vinyl) {
   
 }
 
+.cart {
+  width: 300px; 
+  flex-direction: column;
+  margin-left: 60px;
+
+  
+}
+
+.cart-item {
+  justify-content: space-between;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.side {
+  display: flex;
+  align-items: flex-start; 
+}
 
 </style>
 

@@ -40,15 +40,14 @@ h2, h3, h4{
 }
 
 img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
 }
 
 .card{
-  border: 1PX solid black;
-  margin: 5%;
-  width: 28%;
-  height: 70%;
+margin: 2rem 0;
+  width: 26%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

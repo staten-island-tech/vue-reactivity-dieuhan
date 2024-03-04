@@ -2,7 +2,8 @@
   <div class="body">
 <h1 class="header">uhans vinyl shop :D </h1>
 
-
+<div class="content">
+  <div class="side">
     <div class="gallery">
       <div id="left">
     <DestCard v-for="vinyl in vinyls" 
@@ -12,6 +13,20 @@
     </div>
     <div id="right"></div>
   </div>
+
+  <div class="cart">
+    <h2>Cart</h2>
+        <div v-for="item in cart" :key="item.title" class="cart-item">
+          <p>{{ item.title }}</p>
+          <p>{{ item.price }}</p>
+        </div>
+        <div class="total">
+          <p>Total: ${{ total }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
  
 </div>
 </template>
@@ -113,14 +128,34 @@ const vinyls = [
           price: "$39.98",
           img: "https://m.media-amazon.com/images/I/91Z3q2ceS-L._UF1000,1000_QL80_.jpg"
         },
+        {
+          title: "Girlfriend",
+          artist: "The Driver Era",
+          price: "$36.60",
+          img: "https://m.media-amazon.com/images/I/81CN3Fszm4L._UF1000,1000_QL80_.jpg"
+        },
+        {
+          title: "Beatopia",
+          artist: "Beabadoobee",
+          price: "$42.00",
+          img: "https://media.pitchfork.com/photos/623a9d636597466fa9d6e2ba/master/w_1280%2Cc_limit/beabadoobee-Beatopia.jpg"
+        },
+        {
+          title: "Little Angel",
+          artist: "Role Model",
+          price: "$17.06",
+          img: "https://i.discogs.com/eOz_gWD5HogcgM_uUkwmQjxX5VA13ZhBr-yhuejExyc/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MzYx/ODg2LTE2MTMwNDEz/ODQtMzUzMi5qcGVn.jpeg"
+        }
       ]
 
 const cart = ref([]);
+const total = ref(0);
 
 function addToCart(vinyl) {
   cart.value.push(vinyl);
- 
   console.log('Added to Cart:', vinyl)
+  total.value += parseFloat(vinyl.price.replace('$', '')) //add to total 
+  total.value = Math.round(total.value * 100) / 100; //round 
 }
 
 </script>
@@ -132,17 +167,53 @@ function addToCart(vinyl) {
   margin-top: 20px;
 }
 .gallery{
-  margin: 1rem auto;
+  
   display: flex;
+<<<<<<< HEAD
   width: 100%;
   height: 90vh;
+=======
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80vw;
+>>>>>>> 6cf7599903c11b63414c259310d25003f1e6de3c
   background-color: rgb(174, 219, 186);
+ margin-left: 90px;
+  
 }
 
+<<<<<<< HEAD
 #left{
   display: flex;
   max-width: 20%;
   height: 100%;
+=======
+.cart {
+  width: 300px; 
+  flex-direction: column;
+  margin-left: 60px;
+
+  
+}
+
+.cart-item {
+  justify-content: space-between;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.side {
+  display: flex;
+  align-items: flex-start; 
+>>>>>>> 6cf7599903c11b63414c259310d25003f1e6de3c
 }
 
 #right{

@@ -28,14 +28,19 @@ function increment(){
 const emits = defineEmits(['addToCart']);
 
 function addToCart() {
-  emits('addToCart', props.Vinyl);
+  emits('addToCart', props.Vinyl); //create or "emit" addtocart
 }
 
 </script>
 
 <style scoped>
 
+h2, h3, h4{
+    margin: 0.5rem;
+}
+
 img{
+<<<<<<< HEAD
     width: 100%;
     height: auto;
 }
@@ -45,6 +50,16 @@ img{
   margin: 5%;
   width: 28%;
   height: 70%;
+=======
+    width: auto;
+    height: 300px;
+}
+
+.card{
+height: auto;
+  margin: 2rem 0;
+  width: 26%;
+>>>>>>> 6cf7599903c11b63414c259310d25003f1e6de3c
   display: flex;
   flex-direction: column;
   align-items: center;

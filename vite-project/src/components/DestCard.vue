@@ -28,26 +28,28 @@ function increment(){
 const emits = defineEmits(['addToCart']);
 
 function addToCart() {
-  emits('addToCart', props.Vinyl); //create or "emit" addtocart
+  emits('addToCart', props.Vinyl);
 }
 
 </script>
 
 <style scoped>
 
-h2, h3, h4{
-    margin: 0.5rem;
-}
-
 img{
-    width: auto;
+    width: 300px;
     height: 300px;
 }
 
 .card{
+<<<<<<< HEAD
 margin: 2rem 0;
   width: 26%;
   height: auto;
+=======
+    height: 50vh;
+  margin: 2rem 0;
+  width: 28%;
+>>>>>>> parent of ea6e1e0 (bleepbloop)
   display: flex;
   flex-direction: column;
   align-items: center;
